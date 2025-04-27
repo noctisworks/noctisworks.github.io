@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Noctis Works</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #0D0D0D;
+      color: #F5F5F5;
+    }
+
+    a {
+      text-decoration: none;
+      color: #F5F5F5;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #0D0D0D;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .nav-links a {
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 90vh;
+      background: radial-gradient(circle at center, #1a1a1a 0%, #0D0D0D 100%);
+      padding: 20px;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      min-height: 120px;
+      transition: opacity 0.8s ease;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #CCCCCC;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      border: 1px solid #F5F5F5;
+      color: #F5F5F5;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #0077FF;
+      border-color: #0077FF;
+    }
+
+    .solutions {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .solutions h2 {
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+
+    .solution-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .solution-card {
+      background-color: #1a1a1a;
+      padding: 30px;
+      width: 280px;
+      border: 1px solid #333333;
+      border-radius: 8px;
+      text-align: left;
+    }
+
+    .solution-card h3 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .solution-card p {
+      font-size: 14px;
+      color: #CCCCCC;
+    }
+
+    .tech {
+      background-color: #121212;
+      padding: 80px 40px;
+    }
+
+    .tech-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .tech-image {
+      width: 300px;
+      height: 300px;
+      background-color: #2A2A2E;
+      margin: 20px;
+    }
+
+    .tech-text {
+      max-width: 500px;
+      margin: 20px;
+    }
+
+    .tech-text h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    .tech-text p {
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #CCCCCC;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">NOCTIS WORKS</div>
+    <nav class="nav-links">
+      <a href="#">[Solutions]</a>
+      <a href="#">[Technology]</a>
+      <a href="#">[About Us]</a>
+      <a href="#">[Careers]</a>
+      <a href="#">[Contact]</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1 id="hero-headline">BUILT FOR THE SILENT GUARDIANS.</h1>
+    <p>Advanced systems for detection, analysis, and action.</p>
+    <a href="#" class="btn">[Explore Solutions]</a>
+  </section>
+
+  <section class="solutions">
+    <h2>[SOLUTIONS]</h2>
+    <div class="solution-grid">
+      <div class="solution-card">
+        <h3>DATA COLLECTION DEVICES</h3>
+        <p>Ground sensors, surveillance modules, smart towers — customized for any terrain.</p>
+      </div>
+      <div class="solution-card">
+        <h3>DATA ANALYSIS PLATFORMS</h3>
+        <p>Real-time detection, predictive analytics, and mission-critical insights.</p>
+      </div>
+      <div class="solution-card">
+        <h3>DATA ACTION AGENTS</h3>
+        <p>Deployable systems that automate responses and enhance agent effectiveness.</p>
+      </div>
+    </div>
+    <a href="#" class="btn">[View All Solutions]</a>
+  </section>
+
+  <section class="tech">
+    <div class="tech-content">
+      <div class="tech-image">
+        <!-- Optional: Insert an actual image here later -->
+      </div>
+      <div class="tech-text">
+        <h2>PRECISION ENGINEERING.<br>FIELD PROVEN.</h2>
+        <p>
+          Every device, every platform, every algorithm — designed for seamless integration into complex operational theaters.
+          Noctis Works brings unmatched modularity, security, and resilience to your mission-critical environments.
+        </p>
+        <p class="small">
+          Headquarters: Reston, Virginia<br>
+          Clearance: Active DoD Top Secret<br>
+          Established: 2025
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const headlines = [
+      "BUILT FOR THE SILENT GUARDIANS.",
+      "PROTECTING WITHOUT SPOTLIGHT.",
+      "SYSTEMS FOR THOSE WHO STAND WATCH.",
+      "PRECISION FOR THE UNSEEN DEFENDER.",
+      "WHERE TECHNOLOGY MEETS DUTY.",
+      "EMPOWERING EVERY QUIET VIGIL.",
+      "INVISIBLE STRENGTH. UNMATCHED PERFORMANCE.",
+      "ALWAYS WATCHING. ALWAYS READY."
+    ];
+
+    let currentHeadline = 0;
+    const headlineElement = document.getElementById("hero-headline");
+
+    function rotateHeadline() {
+      headlineElement.style.opacity = 0;
+      setTimeout(() => {
+        currentHeadline = (currentHeadline + 1) % headlines.length;
+        headlineElement.textContent = headlines[currentHeadline];
+        headlineElement.style.opacity = 1;
+      }, 800);
+    }
+
+    setInterval(rotateHeadline, 5000); // Change headline every 5 seconds
+  </script>
+
+</body>
+</html>
