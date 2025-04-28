@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #0D0D0D;
+    color: #F5F5F5;
+}
+
+a {
+    text-decoration: none;
+    color: #F5F5F5;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0077FF;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #0D0D0D;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+    padding: 20px;
+    position: relative;
+    background-color: #121212;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    min-height: 120px;
+    transition: opacity 0.8s ease;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #CCCCCC;
+}
+
+#hero-headline {
+    padding: 10px
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    color: #F5F5F5;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #0077FF;
+    color: #F5F5F5;
+}
+
+.solutions {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.solutions h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.solution-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.solution-card {
+    background-color: #1a1a1a;
+    padding: 30px;
+    width: 280px;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    text-align: left;
+    transition: background 0.3s;
+}
+
+.solution-card:hover {
+    background-color: #0077FF;
+    color: #ffffff;
+}
+
+.solution-card h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.solution-card p {
+    font-size: 14px;
+    color: #CCCCCC;
+}
+
+.tech {
+    background-color: #121212;
+    padding: 80px 40px;
+}
+
+.tech-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tech-image,
+.tech-image img {
+    max-width: 300px;
+    margin: 20px;
+}
+
+.tech-image img {
+    background-color: #0077FF;
+}
+
+.tech-text {
+    max-width: 500px;
+    margin: 20px;
+}
+
+.tech-text h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.tech-text p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #CCCCCC;
+}
