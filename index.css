@@ -33,6 +33,23 @@ a:hover {
     font-weight: bold;
 }
 
+@media (max-width: 550px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+}
+
 .hero {
     display: flex;
     flex-direction: column;
@@ -43,6 +60,7 @@ a:hover {
     padding: 20px;
     position: relative;
     background-color: #121212;
+    background: radial-gradient(circle at center, #1a1a1a 0%, #0D0D0D 100%);
 }
 
 .hero h1 {
@@ -55,11 +73,12 @@ a:hover {
 .hero p {
     font-size: 18px;
     margin-bottom: 30px;
+    padding: 0 25px;
     color: #CCCCCC;
 }
 
 #hero-headline {
-    padding: 10px
+    padding: 25px
 }
 
 .btn {
